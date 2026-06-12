@@ -7,19 +7,25 @@ It's not bad, but could be much better.
 # Background #
 
 The Dedham Food Pantry serves the residents of Dedham, MA.
+We serve around 550 households annually, which include around 1500 people.
+Those households shop around 7500 times.
 
 We use the Oasis case management system.
 
-Oasis doesn't have any concept of shopping appointments.
-It records shopping events, but doesn't help clients decide when to shop.
+Due to increasing demand for our services (currently around 110-120 households on Saturday morning), we had to implement a reservation system.
+This allows clients to choose a time to shop, which is more convenient for the clients than "first-come first-served", and also reduces backlogs by smoothing the client arrival rate.
+
+Oasis records shopping events, but doesn't help clients decide when to shop.
+It has a scheduling implementation, but it's not usable by clients (only Oasis users) which would waste too much staff time.
+We implemented a client-facing reservation system using SignupGenius.
 
 The ideal system would manage *both* cases and appointments but we haven't found one that does.
 
 # History #
 
 As of Spring 2026 we use SignupGenius (SUG), a popular system for managing signups.
-SUG works reasonably well, but implements a very generic concept of "signups."
-This leads to a few problems for us:
+SUG works reasonably well, but implements a very basic concept of "signups."
+This leads to problems such as:
 
 * The check-in process is awkward because SUG and Oasis aren't integrated
     * Our desk volunteer has to first find the client in SUG (to verify their appointment), then use the client's "blue card" ID to record the shopping event in Oasis
@@ -35,6 +41,7 @@ We spend too much time helping our clients manage their SUG accounts.
 * Multilingual (we typically translate everything into English, Spanish, and Haitian Creole)
 * Efficient checkin process (integrates with Oasis)
 * Tracks whether appointments are honored
+* Works with USB barcode scanners (they usually pretend to be keyboards)
 
 # Scale #
 
@@ -76,7 +83,7 @@ We can save clients time by making the "earliest appointment" workflow as easy a
 
 Clients must be sent an email confirmation of their appointment.
 
-## Volunteer Checks-in Clients ##
+## Client Checks In To Shop ##
 
 The MVP must provide a web page with a chronological list of today's appointments.
 Each appointment in the list should have a link to the client's case in Oasis.
