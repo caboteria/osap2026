@@ -1,6 +1,6 @@
 # Introduction #
 
-The Dedham Food Pantry serves more than 1500 Dedham residents annually.
+The [Dedham Food Pantry](https://dedhamfoodpantry.org/) serves more than 1500 Dedham residents annually.
 Due to the ever-increasing demand for our services, we implemented a shopping appointment registration system.
 It's not bad, but could be much better.
 
@@ -10,7 +10,7 @@ The Dedham Food Pantry serves the residents of Dedham, MA.
 We serve around 550 households annually, which include around 1500 people.
 Those households shop around 7500 times.
 
-We use the Oasis case management system.
+We use the [Oasis](https://oasisinsight.net/) case management system.
 
 Due to increasing demand for our services (currently around 110-120 households on Saturday morning), we had to implement a reservation system.
 This allows clients to choose a time to shop, which is more convenient for the clients than "first-come first-served", and also reduces backlogs by smoothing the client arrival rate.
@@ -23,7 +23,7 @@ The ideal system would manage *both* cases and appointments but we haven't found
 
 # History #
 
-As of Spring 2026 we use SignupGenius (SUG), a popular system for managing signups.
+As of Spring 2026 we use [SignUpGenius](https://www.signupgenius.com/) (SUG), a popular system for managing signups.
 SUG works reasonably well, but implements a very basic concept of "signups."
 This leads to problems such as:
 
